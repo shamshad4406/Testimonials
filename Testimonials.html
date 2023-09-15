@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="Testmo.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Testimonials</h1>
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+        <div class="slide-row" id="slide">
+            <div class="slide-col">
+                <div class="user-text">
+                  <p>Sarah Samona is an American internet entrepreneur and media
+                    proprietor, and investor. She is the founder of the multi-national
+                    technology company Zara.</p>
+                    <h3>Sarah</h3>
+                    <p>Zara Inc.</p>
+                  
+                </div>
+                <div class="user-img">
+                  <img src="./images/zara.jpg">
+                </div>
+            </div>
+            <div class="slide-col">
+                <div class="user-text">
+                  <p>His own luxury clothing brand, Wrogn, and lifestyle brand for kids, 
+                    Stepathlon Kids, further enhance his startup portfolio. Virat Kohli's foray
+                    into the startup world is reflective of a larger trend among Indian cricketers, following in the
+                    footsteps of other notable sportsmen like Sachin Tendulkar and Kapil Dev.</p>
+                    <h3>Virat Kohli</h3>
+                    <p>Wrogn</p>
+                  
+                </div>
+                <div class="user-img">
+                  <img src="./images/viratwrogn.jpg">
+                </div>
+            </div>
+            <div class="slide-col">
+                <div class="user-text">
+                  <p>
+                    Adidas is a publicly traded company that was founded by Adolf Dassler in Germany. 
+                    Its shareholders own Adidas, and it is listed on the DAX, 
+                    an index of the 30 biggest German companies trading on the Frankfurt Stock Exchange</p>
+                    <h3></h3>
+                    <p>Adidas</p>
+                  
+                </div>
+                <div class="user-img">
+                  <img src="./images/adidas.jpg">
+                </div>
+            </div>
+            <div class="slide-col">
+                <div class="user-text">
+                  <p>William Henry Gates III is an American billionaire business magnate, philanthropist,
+                     and investor best known for co-founding
+                     the software giant Microsoft, along with his childhood friend Paul Allen.</p>
+                    <h3>Bill Gates</h3>
+                    <p>Microsoft Corporation</p>
+                  
+                </div>
+                <div class="user-img">
+                  <img src="./images/bill.jpg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+         var btn= document.getElementsByClassName("btn");
+         var slide = document.getElementById("slide");
+         btn[0].onclick= function(){
+          slide.style.transform="translatex(0px)";
+          for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+          }
+           this.classList.add("active");
+         }
+         btn[1].onclick= function(){
+          slide.style.transform="translatex(-800px)";
+          for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+          }
+           this.classList.add("active");
+         }
+         btn[2].onclick= function(){
+          slide.style.transform="translatex(-1600px)";
+          for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+          }
+           this.classList.add("active");
+         }
+         btn[3].onclick= function(){
+          slide.style.transform="translatex(-2400px)";
+          for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+          }
+           this.classList.add("active");
+         }
+         
+    </script>
+</body>
+</html>
